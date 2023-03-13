@@ -1,34 +1,23 @@
 const resetButton = document.getElementById("reset");
+const numbersState = [
+  { char: "0", to: 2 },
+  { char: "1", to: 2 },
+  { char: "2", to: 2 },
+  { char: "3", to: 2 },
+  { char: "4", to: 2 },
+  { char: "5", to: 2 },
+  { char: "6", to: 2 },
+  { char: "7", to: 2 },
+  { char: "8", to: 2 },
+  { char: "9", to: 2 },
+];
 const states = [
   [
     { char: "-", to: 1 },
     { char: "+", to: 1 },
   ],
-  [
-    { char: "0", to: 2 },
-    { char: "1", to: 2 },
-    { char: "2", to: 2 },
-    { char: "3", to: 2 },
-    { char: "4", to: 2 },
-    { char: "5", to: 2 },
-    { char: "6", to: 2 },
-    { char: "7", to: 2 },
-    { char: "8", to: 2 },
-    { char: "9", to: 2 },
-  ],
-  [
-    { char: "0", to: 2 },
-    { char: "1", to: 2 },
-    { char: "2", to: 2 },
-    { char: "3", to: 2 },
-    { char: "4", to: 2 },
-    { char: "5", to: 2 },
-    { char: "6", to: 2 },
-    { char: "7", to: 2 },
-    { char: "8", to: 2 },
-    { char: "9", to: 2 },
-    { char: "ε", end: true },
-  ],
+  numbersState,
+  [...numbersState, { char: "ε", end: true }],
 ];
 
 let number = "";
