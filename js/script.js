@@ -67,6 +67,5 @@ const render = () => {
   renderNumber();
 };
 
-renderItems();
-renderNumber();
+render();
 resetButton.addEventListener("click", start);
