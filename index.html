@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title translate="no">Autômato ER</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com/%22%3E
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="left">
+        <div class="item-text">
+          <span>Expressão regular:</span>
+          <span>(-|+) (0|1|2|3|4|5|6|7|8|9)+</span>
+        </div>
+
+        <div class="item-text">
+          <span>Gramática:</span>
+          <span>S -> -A | +A</span>
+          <span>A -> 0A | 1A | 2A | 3A | 4A | 5A | 6A | 7A | 8A | 9A | ε</span>
+        </div>
+      </div>
+
+      <div class="right">
+        <table id="table"></table>
+        <div class="item-text">
+          <span>Número formado:</span>
+          <span id="number"></span>
+        </div>
+        <button id="reset">Reset</button>
+      </div>
+    </div>
+    <footer>
+      <p>
+        <a
+          href="https://github.com/FelipeESchmidt"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Felipe Schmidt
+        </a>
+        -
+        <a
+          href="https://github.com/GabrielMWalker"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Gabriel Walker
+        </a>
+        -
+        <a
+          href="https://github.com/LuisTabile"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Luis Tabile
+        </a>
+      </p>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
